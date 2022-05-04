@@ -1,0 +1,50 @@
+@font-face{
+    font-family: Backsteal-Regular;
+    src: url(Backsteal-Regular.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Backsteal-Regular;
+    background-color:  #000;
+}
+
+.text_color {
+    background: linear-gradient(to bottom, #2980b9, #2c3e50);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.time_wrapper {
+    position: relative;
+}
+
+#time {
+    text-shadow: 0 0 55px #2980b9;
+    font-size: 4.5rem;
+}
+
+#med {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.day_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day_wrapper span{
+    font-size: 0.9rem;
+    opacity: 0.4;
+    font-weight: 600;
+}

@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #111;
+    background-image: linear-gradient(90deg, #e60000 0%, #111 1%,  #111 99%, #3f00ff 100%);
+}
+
+.glitch {
+    font-size: 150px;
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-decoration: none;
+    color: #111;
+}
+
+
+
+
+    /* previous code */
+    .glitch:before, .glitch:after {
+        display: block;
+        content: '404';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: .8;
+    } .glitch:after {
+        color: #e60000;
+        z-index: -1;
+    } .glitch:before {
+        color: #3f00ff;
+        z-index: -1;
+    }
+
+    .ERROR{
+        font-size: 40px;
+        color: whitesmoke;
+        position: absolute;
+        margin-top: 400px;
+        margin: 440px;        
+        z-index: 2;
+        letter-spacing: 18px;
+    
+    }
+
+
+@keyframes glitch {
+    0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translate(-5px, 5px)
+    }
+    40% {
+        transform: translate(-5px, -5px)
+    }
+    60% {
+        transform: translate(5px, 5px)
+    }
+    80% {
+        transform: translate(5px, -5px)
+    }
+    to {
+        transform: translate(0)
+    }
+}
+
+
+        .glitch:before {
+            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both infinite
+        }
+        .glitch:after {
+            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both infinite
+        }
+

@@ -1,12 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🧡Document</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+
 </head>
+
 <body>
-    <h1> Utkarsh Nigam</h1>
-</body>
+    <!--<div class="wrapper">
+        <div class="icon twitter">
+            <div class="tooltip">Twitter</div>
+            <span><i class="fab fa-twitter"></i></span>
+        </div>
+        <div class="icon github">
+            <div class="tooltip">Github</div>
+            <span><i class="fab fa-github"></i></span>
+        </div>
+        <div class="icon youtube">
+            <div class="tooltip">Youtube</div>
+            <span><i class="fab fa-youtube"></i></span>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+    
+    <div class="maincre center">
+        <div class="boxcre center">
+            <img src="./favicon.png" alt="">
+            <div>
+                <p class="user_name">Aditya Choudhury</p>
+                <p class="skill">Back-end developer</p>
+            </div>
+            <div class="arr_container center ">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+                <p>Skills</p>
+                <div class="skills">
+                <div>Networking</div>
+                <div>css</div>
+                <div>Javascript</div>
+                <div>Python</div>
+            </div>
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        const clc= document.querySelector(".cancel");
+        const arr= document.querySelector(".arr_container");
+        const left_container= document.querySelector(".left_container");
+        
+        arr.addEventListener("click", ()=>{
+            arr.classList.add("active_arr");
+            if(left_container.classList.contains("off")){
+                left_container.classList.remove("off");
+                left_container.classList.add("active");
+            }
+        });
+        clc.addEventListener("click", ()=>{
+            arr.classList.remove("active_arr");
+            if(left_container.classList.contains("active")){
+                left_container.classList.remove("active");
+                left_container.classList.add("off");
+            }
+        });
+
+    </script>
+
+    <div class="wrapper">
+
+        <div class="time_wrapper">
+            <span class="text_color" id="time"></span>
+            <span class="text_color" id="sec"></span>
+            <span class="text_color" id="med"></span>
+        </div>
+        <div class="day_wrapper">
+            <span class="text_color" id="SUN"></span>
+            <span class="text_color" id="MON"></span>
+            <span class="text_color" id="TUE"></span>
+            <span class="text_color" id="WED"></span>
+            <span class="text_color" id="THU"></span>
+            <span class="text_color" id="FRI"></span>
+            <span class="text_color" id="SAT"></span>
+        </div>
+        <span class="text_color" id="full_date"></span>
+    </div>
+
+    <script>
+        function currentTime(){
+            var date= new Date();
+            var day= date.getDay();
+            var hour = date.getHours();
+            var min= date.getMinutes();
+            var sec= date.getSeconds();
+            var month= date.getMonth();
+            var curr_date= date.getDate();
+            var year= date.getFullYear();
+            var month_name= ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"]; 
+
+            var showDay= document.querySelectorAll(".day_wrapper span")
+            var midday= "AM";
+            //midday = (hour>=12)? "PM": "AM";
+            //hour = (hour == 0)? 12 : ((hour >12) ? (hour -12) : hour);
+            hour = updateTime(hour);
+            min = updateTime(min);
+            sec = updateTime(sec);
+            curr_date = updateTime(curr_date)
+            document.querySelector("#time").innerHTML = `${hour}:${min}`
+            document.querySelector("#sec").innerHTML = `${sec}`
+            //document.querySelector("#med").innerHTML = `${midday}`
+            //document.querySelector("#day").innerHTML = `${showDay}`
+            document.querySelector("#full_date").innerHTML = `${month_name[month]} ${curr_date} ${year}`
+            showDay[day].style.opacity='1';
+        }
+
+        function updateTime(k){
+            if(k<10){
+                return "0" +k;
+            }
+            else {
+                return k;
+            }
+        }
+
+        setInterval(currentTime, 1000);
+    </script>
+    <div class="spinner"></div>
+
+
+        <i class="ri-instagram-line icon">inzsedfghjk</i>
+        <i class="ri-facebook-circle-line icon">sdzxfcgvhbjk</i>
+        <i class="ri-whatsapp-line icon">esrdfghjk</i>
+-->
+<div>
+    <a href="#" class="glitch"> 404</a>
+    
+</div>
+
+<div class="ERROR center">
+    PAGE NOT FOUND
+</div>
+    
+
+    </body>
+
 </html>
